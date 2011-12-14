@@ -809,6 +809,8 @@ static void toggle_offline_mode()
   }
 
   prefs.offline_mode = !prefs.offline_mode;
+  /* Save the change */
+  save_preferences();
 }
 
 /* Startup calls and initializations */
